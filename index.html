@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INDA Campus 3D</title>
+  <meta name="description" content="Campus 3D del Instituto Nacional de Desarrollo Académico. Recorré aulas, hologramas y portales a campusinda.net." />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <script type="module" crossorigin src="./assets/index-D8FMIu4h.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DNsVd8Cn.css">
+</head>
+<body>
+  <div id="hud-top">
+    <div class="brand-pill">
+      <div>INDA<span>Universidad &amp; Campus 3D</span></div>
+    </div>
+    <div class="system-pill">
+      <span class="live-dot"></span>
+      <b>campusinda.net</b>
+      <span>|</span>
+      <a href="https://www.inda.com.ar" target="_blank" rel="noopener">inda.com.ar</a>
+      <a href="https://inda.edu.uy" target="_blank" rel="noopener">inda.edu.uy</a>
+    </div>
+  </div>
+
+  <nav id="nav-teleport" aria-label="Salas del campus"></nav>
+  <div id="prompt-interaction">Presioná [E] para interactuar</div>
+
+  <div id="modal-container" hidden>
+    <button class="btn-close" type="button" data-close>×</button>
+    <h3 id="modal-title">Terminal INDA</h3>
+    <div id="modal-body"></div>
+    <div class="modal-actions" id="modal-actions"></div>
+  </div>
+
+  <div id="hint-box">
+    <b>WASD / flechas</b> caminar · <b>arrastrar</b> mirar · <b>E</b> interactuar · <b>M</b> minimapa · <b>?</b> editor
+  </div>
+  <div id="minimap" hidden></div>
+  <div id="editor-panel" hidden></div>
+
+</body>
+</html>
