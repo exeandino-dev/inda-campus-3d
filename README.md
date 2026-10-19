@@ -40,9 +40,9 @@ Query params:
 
 ## Deploy GitHub Pages
 
-1. Settings → Pages → **Source: GitHub Actions**.
-2. Push a `main`. El workflow `.github/workflows/pages.yml` hace `npm ci && npm run build` y publica `dist/`.
-3. URL típica: `https://exeandino-dev.github.io/inda-campus-3d/`
+1. El workflow publica `dist/` en la rama `gh-pages`.
+2. Settings → Pages → **Deploy from a branch** → `gh-pages` / `/ (root)`.
+3. URL: `https://exeandino-dev.github.io/inda-campus-3d/`
 
 `vite.config.js` usa `base: './'` para que también sirva en un subdominio o carpeta.
 
