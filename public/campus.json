@@ -1,0 +1,216 @@
+{
+  "campus": {
+    "name": "INDA Universidad 3D",
+    "moodle": "https://campusinda.net/",
+    "moodleCoursesIndex": "https://campusinda.net/course/index.php",
+    "agentUrl": "",
+    "sites": [
+      { "label": "Argentina", "url": "https://www.inda.com.ar" },
+      { "label": "Uruguay", "url": "https://inda.edu.uy" },
+      { "label": "Campus Moodle", "url": "https://campusinda.net/" }
+    ]
+  },
+  "spawn": [0, 0, 16],
+  "player": { "radius": 0.55, "speed": 12, "eye": 1.6, "camDist": 6.8, "camHeight": 2.5 },
+  "rooms": [
+    {
+      "id": "hall",
+      "label": "Hall Central",
+      "icon": "🏛️",
+      "floor": { "x": 0, "z": 4, "w": 38, "d": 54, "type": "hall", "repeat": [8, 12] },
+      "teleport": [0, 0, 16],
+      "moodle": "https://campusinda.net/"
+    },
+    {
+      "id": "ai",
+      "label": "Laboratorio IA",
+      "icon": "🧠",
+      "floor": { "x": -35, "z": -7, "w": 30, "d": 26, "type": "ai_lab", "repeat": [6, 6] },
+      "teleport": [-35, 0, -6],
+      "moodle": "https://campusinda.net/course/view.php?id=15047"
+    },
+    {
+      "id": "crypto",
+      "label": "Cómputo & Blockchain",
+      "icon": "⛓️",
+      "floor": { "x": 35, "z": -7, "w": 30, "d": 26, "type": "crypto", "repeat": [6, 6] },
+      "teleport": [35, 0, -6],
+      "moodle": "https://campusinda.net/course/index.php"
+    },
+    {
+      "id": "library",
+      "label": "Biblioteca Moodle",
+      "icon": "📚",
+      "floor": { "x": -35, "z": 21, "w": 30, "d": 28, "type": "library", "repeat": [6, 6] },
+      "teleport": [-35, 0, 22],
+      "moodle": "https://campusinda.net/course/index.php"
+    },
+    {
+      "id": "cad",
+      "label": "Aula Holográfica CAD",
+      "icon": "🔬",
+      "floor": { "x": 35, "z": 21, "w": 30, "d": 28, "type": "cad", "repeat": [6, 6] },
+      "teleport": [35, 0, 22],
+      "moodle": "https://campusinda.net/course/view.php?id=15114"
+    }
+  ],
+  "walls": [
+    { "id": "north", "x": 0, "y": 7, "z": -23, "w": 40, "h": 14, "d": 1.2, "mat": "exterior" },
+    { "id": "south-l", "x": -13, "y": 7, "z": 31, "w": 14, "h": 14, "d": 1.2, "mat": "exterior" },
+    { "id": "south-r", "x": 13, "y": 7, "z": 31, "w": 14, "h": 14, "d": 1.2, "mat": "exterior" },
+    { "id": "west-btm", "x": -50, "y": 1.25, "z": 7, "w": 1.2, "h": 2.5, "d": 54, "mat": "exterior" },
+    { "id": "east-btm", "x": 50, "y": 1.25, "z": 7, "w": 1.2, "h": 2.5, "d": 54, "mat": "exterior" },
+    { "id": "west-top", "x": -50, "y": 7.75, "z": 7, "w": 1.2, "h": 1.5, "d": 54, "mat": "exterior" },
+    { "id": "east-top", "x": 50, "y": 7.75, "z": 7, "w": 1.2, "h": 1.5, "d": 54, "mat": "exterior" },
+    { "id": "wing-wn", "x": -35, "y": 4.25, "z": -20, "w": 30, "h": 8.5, "d": 1.2, "mat": "exterior" },
+    { "id": "wing-ws", "x": -35, "y": 4.25, "z": 35, "w": 30, "h": 8.5, "d": 1.2, "mat": "exterior" },
+    { "id": "wing-en", "x": 35, "y": 4.25, "z": -20, "w": 30, "h": 8.5, "d": 1.2, "mat": "exterior" },
+    { "id": "wing-es", "x": 35, "y": 4.25, "z": 35, "w": 30, "h": 8.5, "d": 1.2, "mat": "exterior" },
+    { "id": "div-wn", "x": -19, "y": 4.25, "z": -12, "w": 1, "h": 8.5, "d": 16, "mat": "interior" },
+    { "id": "div-ws", "x": -19, "y": 4.25, "z": 23, "w": 1, "h": 8.5, "d": 16, "mat": "interior" },
+    { "id": "div-en", "x": 19, "y": 4.25, "z": -12, "w": 1, "h": 8.5, "d": 16, "mat": "interior" },
+    { "id": "div-es", "x": 19, "y": 4.25, "z": 23, "w": 1, "h": 8.5, "d": 16, "mat": "interior" },
+    { "id": "cut-wl", "x": -43, "y": 4.25, "z": 7, "w": 10, "h": 8.5, "d": 0.9, "mat": "interior" },
+    { "id": "cut-wr", "x": -27, "y": 4.25, "z": 7, "w": 10, "h": 8.5, "d": 0.9, "mat": "interior" },
+    { "id": "cut-el", "x": 27, "y": 4.25, "z": 7, "w": 10, "h": 8.5, "d": 0.9, "mat": "interior" },
+    { "id": "cut-er", "x": 43, "y": 4.25, "z": 7, "w": 10, "h": 8.5, "d": 0.9, "mat": "interior" }
+  ],
+  "decor": {
+    "glassEntrance": { "x": 0, "y": 5, "z": 31, "w": 12, "h": 10, "d": 0.4 },
+    "glassWest": { "x": -50, "y": 4.75, "z": 7, "w": 0.3, "h": 4.5, "d": 54 },
+    "glassEast": { "x": 50, "y": 4.75, "z": 7, "w": 0.3, "h": 4.5, "d": 54 },
+    "archWest": { "x": -19, "y": 6.75, "z": 5.5, "w": 1, "h": 3.5, "d": 14 },
+    "archEast": { "x": 19, "y": 6.75, "z": 5.5, "w": 1, "h": 3.5, "d": 14 },
+    "headerW": { "x": -35, "y": 6.5, "z": 7, "w": 10, "h": 4, "d": 0.9 },
+    "headerE": { "x": 35, "y": 6.5, "z": 7, "w": 10, "h": 4, "d": 0.9 },
+    "balcony": { "x": 0, "y": 6, "z": -18.5, "w": 38, "h": 0.6, "d": 8 },
+    "rail": { "x": 0, "y": 6.9, "z": -14.6, "w": 37.5, "h": 1.2, "d": 0.1 },
+    "hallRoof": { "x": 0, "y": 14, "z": 4, "w": 40, "h": 0.8, "d": 56 },
+    "wingRoofW": { "x": -35, "y": 8.5, "z": 7, "w": 32, "h": 0.6, "d": 56 },
+    "wingRoofE": { "x": 35, "y": 8.5, "z": 7, "w": 32, "h": 0.6, "d": 56 }
+  },
+  "bounds": { "minX": -48, "maxX": 48, "minZ": -21, "maxZ": 33 },
+  "tvs": [
+    {
+      "id": "tv-hall-hi",
+      "name": "Pantalla monumental Hall INDA",
+      "pos": [0, 9.4, -22.3],
+      "size": [13, 5.5],
+      "rotY": 0,
+      "url": "https://www.youtube.com/embed/L_LUpnjgPso",
+      "tag": "CANAL INSTITUCIONAL INDA"
+    },
+    {
+      "id": "tv-hall-lo",
+      "name": "Monitor planta baja",
+      "pos": [0, 2.8, -22.3],
+      "size": [9.5, 3.8],
+      "rotY": 0,
+      "url": "https://www.youtube.com/embed/L_LUpnjgPso",
+      "tag": "CAMPUS & NOVEDADES"
+    },
+    {
+      "id": "tv-ai",
+      "name": "Panel redes neuronales",
+      "pos": [-49.3, 4, -7],
+      "size": [9, 4.4],
+      "rotY": 1.5707963267948966,
+      "url": "https://www.youtube.com/embed/aircAruvnKk",
+      "tag": "INDA IA LAB"
+    },
+    {
+      "id": "tv-crypto",
+      "name": "Monitor nodos blockchain",
+      "pos": [49.3, 4, -7],
+      "size": [9, 4.4],
+      "rotY": -1.5707963267948966,
+      "url": "https://www.youtube.com/embed/SSo_EIwHSd4",
+      "tag": "CRIPTO & CÓMPUTO INDA"
+    }
+  ],
+  "holograms": [
+    { "id": "holo-core", "title": "Núcleo cuántico central INDA", "pos": [0, 2.2, 3], "kind": "quantum" },
+    { "id": "holo-ai", "title": "Visualizador de redes neuronales", "pos": [-35, 1.8, -7], "kind": "neural" },
+    { "id": "holo-chain", "title": "Visualizador de bloques cripto", "pos": [35, 1.8, -7], "kind": "blockchain" },
+    { "id": "holo-cad", "title": "Mesa CAD / SketchUp / Unreal", "pos": [35, 1.8, 21], "kind": "cad", "glb": "" }
+  ],
+  "npcs": [
+    {
+      "id": "npc-hall",
+      "name": "Asistente virtual INDA",
+      "pos": [0, 0, 10],
+      "color": 1376255,
+      "talk": "Bienvenido al campus 3D de INDA. Las aulas están conectadas con campusinda.net: te inscribís en inda.com.ar y el mismo día entras al Moodle.",
+      "options": [
+        { "text": "¿Cómo me muevo?", "resp": "WASD o flechas para caminar, arrastrá el mouse para mirar, E para interactuar. A la izquierda tenés teleports a cada sala." },
+        { "text": "Ir al campus Moodle", "url": "https://campusinda.net/" }
+      ],
+      "agent": true
+    },
+    {
+      "id": "npc-ai",
+      "name": "Tutor de Inteligencia Artificial",
+      "pos": [-30, 0, -4],
+      "color": 65450,
+      "talk": "Laboratorio de IA. El curso vivo es IA desde Cero (4 semanas, biblioteca de prompts).",
+      "options": [
+        { "text": "Abrir IA desde Cero", "url": "https://campusinda.net/course/view.php?id=15047" },
+        { "text": "Inscribirme en inda.com.ar", "url": "https://www.inda.com.ar/cursos/" }
+      ],
+      "agent": true
+    },
+    {
+      "id": "npc-crypto",
+      "name": "Tutor de criptografía",
+      "pos": [30, 0, -4],
+      "color": 16755200,
+      "talk": "Datacenter educativo. Acá se enseña cómputo distribuido y nociones de cadena de bloques, siempre con material de Moodle.",
+      "options": [
+        { "text": "Ver catálogo Moodle", "url": "https://campusinda.net/course/index.php" }
+      ]
+    },
+    {
+      "id": "npc-lib",
+      "name": "Bibliotecaria Moodle",
+      "pos": [-35, 0, 18],
+      "color": 3381759,
+      "talk": "Biblioteca virtual. Cada curso de INDA vive en campusinda.net: material, actividades y examen final online.",
+      "options": [
+        { "text": "Todos los cursos", "url": "https://campusinda.net/course/index.php" },
+        { "text": "Administración de empresas", "url": "https://campusinda.net/course/view.php?id=15054" },
+        { "text": "Paquete Office", "url": "https://campusinda.net/course/view.php?id=14917" }
+      ]
+    },
+    {
+      "id": "npc-cad",
+      "name": "Coordinador CAD / Unreal",
+      "pos": [30, 0, 18],
+      "color": 11163135,
+      "talk": "Aula holográfica. Podés inspeccionar un GLB exportado de Blender, SketchUp o Unreal (Draco/meshopt) desde el holograma.",
+      "options": [
+        { "text": "Photoshop 2026", "url": "https://campusinda.net/course/view.php?id=15114" },
+        { "text": "¿Cómo cargo un GLB?", "resp": "Copiá el archivo a public/models/ y poné holograms[].glb en campus.json. El loader lo proyecta en el pod." }
+      ]
+    }
+  ],
+  "portals": [
+    {
+      "id": "portal-moodle",
+      "name": "Portal campusinda.net",
+      "pos": [0, 0, 28],
+      "kind": "iframe",
+      "url": "https://campusinda.net/",
+      "label": "Entrar al aula virtual"
+    }
+  ],
+  "courses": [
+    { "id": 15047, "title": "IA desde Cero", "url": "https://campusinda.net/course/view.php?id=15047", "room": "ai" },
+    { "id": 15114, "title": "Photoshop Completo 2026", "url": "https://campusinda.net/course/view.php?id=15114", "room": "cad" },
+    { "id": 15054, "title": "Administración de empresas", "url": "https://campusinda.net/course/view.php?id=15054", "room": "library" },
+    { "id": 14917, "title": "Paquete Office", "url": "https://campusinda.net/course/view.php?id=14917", "room": "library" },
+    { "id": 14962, "title": "Lenguaje Braille", "url": "https://campusinda.net/course/view.php?id=14962", "room": "library" },
+    { "id": 15056, "title": "Administrador inmobiliario", "url": "https://campusinda.net/course/view.php?id=15056", "room": "library" },
+    { "id": 15127, "title": "Cosmetología", "url": "https://campusinda.net/course/view.php?id=15127", "room": "library" },
+    { "id": 14931, "title": "Asistente Administrativo Contable", "url": "https://campusinda.net/course/view.php?id=14931", "room": "library" }
+  ]
+}
